@@ -1,0 +1,9 @@
+@font-face {
+font-family: 'Trend Sans One';
+	src: url('../fonts/TrendSansOne.eot');
+	src: url('../fonts/TrendSansOne.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/TrendSansOne.woff') format('woff'),
+	url('../fonts/TrendSansOne.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
