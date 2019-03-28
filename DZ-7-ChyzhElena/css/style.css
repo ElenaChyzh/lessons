@@ -66,7 +66,7 @@ footer a:hover {
 
 .arrowNew i {
 	position:absolute;
-	right: 0;
+	right:17px;
 	top:7px;
 	font-size: 16px;
 	color: #cdcdcd;
@@ -128,9 +128,9 @@ nav {
    }
 
 
-.carousel-caption{
+/*.carousel-caption{
 	bottom: 110px;
-}
+}*/
 .carousel-caption h2{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
@@ -253,7 +253,7 @@ nav {
 }
 .text{
 	font-size: 10px;
-	
+	padding-bottom: 50px;
 }
 
 .text h5{
@@ -276,8 +276,8 @@ nav {
 .fa-clock{
 	margin-right: 5px;
 }
-.fas{
-	margin-right: 20px;
+.text .fas{
+	margin-right: 10px;
 }
 
 
@@ -291,6 +291,15 @@ nav {
 	text-decoration: none;
 	color: white;
 }
+.date{
+	color:#515151;
+}
+.border-bottom {
+    border-bottom: 1px solid #515151!important;
+}
+
+
+
 footer .row{
 	font-size: 12px;
 	padding: 40px 0 40px 0;
@@ -317,14 +326,19 @@ footer a:hover   {
 
 @media (max-width: 650px) {
 	
-	.sosial,.sosial1 {
-		display: none;
-	}
-	.customer{
-		display: none;
-	}
 	.portfolio .border {
 		border: none!important;
 	}
 	
+}
+
+@media (max-width: 760px){
+	.sosial1 i{
+	padding-right: 10px;
+	font-size: 15px;
+	}
+
+	.sosial i {
+	font-size: 15px;
+}
 }

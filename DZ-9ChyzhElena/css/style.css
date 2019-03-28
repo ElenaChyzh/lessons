@@ -319,7 +319,7 @@ aside p{
 	z-index:1;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 800px) {
 	
 	aside{
 		flex-basis: 100%;
