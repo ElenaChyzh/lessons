@@ -3,10 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
+	
 	<title>DZ-9</title>
 </head>
 <body>
@@ -19,9 +21,9 @@
 				<div class="logo-right">nblog</div>
 		</div>
 	</header>
-	<nav class="menu">
+<nav>
 		<div class="container">
-			<ul>
+			<ul class="menu">
 				<li class="active">
 					<a href="#">javascript</a>
 					<div class="triangle"></div>
@@ -44,89 +46,98 @@
 					<div class="triangle-blue"></div>
 				</li>
 			</ul>
+				<div class="mobile-menu">
+					<i class="fas fa-bars"></i>
+				</div>
 		</div>	
 	</nav>
-	<div class="content">
-		<main>
-			<article>
-				<div class="box1">
-					<img src="img/flowers.png" alt="flowers">
-					<h2>Blogotitle of blogopost about blogoflowers</h2>
-					<div class="sosial">
-						<div class="text">
-							<span><i class="far fa-clock"></i> 22:58 Jan 01, 2014</span> <span class="leg"> by E. Hyperraccoon</span>
-						</div>
-						<div class="like">
-							<div class="like1"><a href="#"><i class="fab fa-facebook-f"></i> 16&nbsp;</a></div>
-							<div class="like1"><a href="#"><i class="fab fa-google-plus-g"></i>7&nbsp;</a></div>
-							<div class="like1"><a href="#"><i class="fab fa-twitter"></i>15&nbsp;</a></div>
-							<div class="like1"><a href="#"><i class="fab fa-vk"></i>16&nbsp;</a></div>
-							<div class="like1"><a href="#"><i class="fab fa-yandex"></i>1&nbsp;</a></div>
-						</div>
-					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-					aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-					cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-				</div>
-				<div class="box1">
-					<img src="img/paints.png" alt="paints">
-					<h2>Blogotitle about colorful colors</h2>
+
+	
+		<div class="container content">
+			<main>
+				<article>
+					<div class="box1">
+						<img class="picture" src="img/flowers.png" alt="flowers">
+						<h2>Blogotitle of blogopost about blogoflowers</h2>
 						<div class="sosial">
-						<div class="text">
-							<span><i class="far fa-clock"></i> 22:58 Jan 01, 2014</span> <span class="leg"> by E. Hyperraccoon</span>
+							<div class="text">
+								<span><i class="far fa-clock"></i> 22:58 Jan 01, 2014</span> <span class="leg"> by E. Hyperraccoon</span>
+							</div>
+							<div class="like">
+								<div class="like1"><a href="#"><i class="fab fa-facebook-f"></i> 16&nbsp;</a></div>
+								<div class="like1"><a href="#"><i class="fab fa-google-plus-g"></i>7&nbsp;</a></div>
+								<div class="like1"><a href="#"><i class="fab fa-twitter"></i>15&nbsp;</a></div>
+								<div class="like1"><a href="#"><i class="fab fa-vk"></i>16&nbsp;</a></div>
+								<div class="like1"><a href="#"><i class="fab fa-yandex"></i>1&nbsp;</a></div>
+							</div>
 						</div>
-						<div class="like">
-							<div class="like1"><a href="#"><i class="fab fa-facebook-f"></i> 16&nbsp;</a></div>
-							<div class="like1"><a href="#"><i class="fab fa-google-plus-g"></i>7&nbsp;</a></div>
-							<div class="like1"><a href="#"><i class="fab fa-twitter"></i>15&nbsp;</a></div>
-							<div class="like1"><a href="#"><i class="fab fa-vk"></i>16&nbsp;</a></div>
-							<div class="like1"><a href="#"><i class="fab fa-yandex"></i>1&nbsp;</a></div>
-						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+						aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+						cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
 					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-					aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-					cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-				</div>
-			</article>
-			<aside class="aside">
-				<div class="box2">
-					<h3>ABOUT</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-					dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
-				<div class="box3">
-					<h3>SOME INFO</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-					dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-				</div>
-				<div class="box4">
-					<div class="arrow"><span class="text-c">Racoon</span></div>
-					<div class="arrow"><span class="text-c">Racoon</span></div>
-					<div class="arrow"><span class="text-c">Coon</span></div>
-					<div class="arrow"><span class="text-c">Dog</span></div>
-					<div class="arrow"><span class="text-c">Cat</span></div>
-					<div class="arrow"><span class="text-c">Developer</span></div>
-					<div class="arrow"><span class="text-c">Racoon</span></div>
-					<div class="arrow"><span class="text-c">Racoon</span></div>
-					<div class="arrow"><span class="text-c">Coon</span></div>
-					<div class="arrow"><span class="text-c">Dog</span></div>
-					<div class="arrow"><span class="text-c">Cat</span></div>
-					<div class="arrow"><span class="text-c">Developer</span></div>
-				</div>
-			</aside>
-		</main>
-	</div>
+					<div class="box1">
+						<img class="picture" src="img/paints.png" alt="paints">
+						<h2>Blogotitle about colorful colors</h2>
+							<div class="sosial">
+							<div class="text">
+								<span><i class="far fa-clock"></i> 22:58 Jan 01, 2014</span> <span class="leg"> by E. Hyperraccoon</span>
+							</div>
+							<div class="like">
+								<div class="like1"><a href="#"><i class="fab fa-facebook-f"></i> 16&nbsp;</a></div>
+								<div class="like1"><a href="#"><i class="fab fa-google-plus-g"></i>7&nbsp;</a></div>
+								<div class="like1"><a href="#"><i class="fab fa-twitter"></i>15&nbsp;</a></div>
+								<div class="like1"><a href="#"><i class="fab fa-vk"></i>16&nbsp;</a></div>
+								<div class="like1"><a href="#"><i class="fab fa-yandex"></i>1&nbsp;</a></div>
+							</div>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+						aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+						cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+				</article>
+				<aside class="aside">
+					<div class="box2">
+						<h3>ABOUT</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+						dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+					<div class="box3">
+						<h3>SOME INFO</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+						dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</div>
+					<div class="box4">
+						<div class="arrow"><span class="text-c">Racoon</span></div>
+						<div class="arrow"><span class="text-c">Racoon</span></div>
+						<div class="arrow"><span class="text-c">Coon</span></div>
+						<div class="arrow"><span class="text-c">Dog</span></div>
+						<div class="arrow"><span class="text-c">Cat</span></div>
+						<div class="arrow"><span class="text-c">Developer</span></div>
+						<div class="arrow"><span class="text-c">Racoon</span></div>
+						<div class="arrow"><span class="text-c">Racoon</span></div>
+						<div class="arrow"><span class="text-c">Coon</span></div>
+						<div class="arrow"><span class="text-c">Dog</span></div>
+						<div class="arrow"><span class="text-c">Cat</span></div>
+						<div class="arrow"><span class="text-c">Developer</span></div>
+					</div>
+				</aside>
+			</main>
+		</div>
+
 <footer>
 	<div class="cssload-container">
 		<div class="cssload-speeding-wheel"></div>
 	</div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

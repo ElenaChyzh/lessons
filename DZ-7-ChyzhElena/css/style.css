@@ -60,6 +60,11 @@ footer a:hover {
   width: 100%;
 }
 
+.carousel-caption{
+	bottom:50%;
+	transform:translateY(50%);
+}
+
 .arrowNew{
 	position:relative;
 }
@@ -93,6 +98,13 @@ nav {
 	font-size: 11px;
 }
 
+.dropdown-menu{
+	font-size: 0.5rem;
+}
+
+bottom:focus{
+	    border: 1px solid rgba(0,0,0,.1);
+}
  form input{
 	font-family: 'Open Sans', sans-serif !important;
 	font-size: 10px !important;
@@ -128,19 +140,15 @@ nav {
    }
 
 
-/*.carousel-caption{
-	bottom: 110px;
-}*/
 .carousel-caption h2{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
 }
 .main-text h3 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 30px;
+	font-size: 2rem;
 	text-transform: uppercase;
-	margin-top: 55px;
-	padding-bottom:40px;
+	margin: 55px 0 40px 0;
 }
 
 .bold {
@@ -150,7 +158,7 @@ nav {
 .main-text p {
 	margin-bottom: 55px;
 	font-family: 'PT Sans', sans-serif;
-	font-size: 15px;
+	font-size: 1rem;
 }
 .icon  {
 	margin-bottom: 40px;
@@ -167,19 +175,19 @@ nav {
 	position: absolute;
 	transform: translateX(-50%);
 	left:50%;
-	display: none;
+	opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+	transition: 1s; /*Скорость перехода состояния элемента*/
 
 }
 
 .icon:hover .triangle {
-	display: block;
-	
+	opacity:1;
+	transition: 1s;
 }
 
 .desk i{
 	margin-bottom: 20px;
 	color: #cacaca;
-	
 }
 
 
@@ -192,24 +200,26 @@ nav {
 
 .desk h4 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 20px;
+	font-size: 1.5rem;
 	color: #7b7b7b;
 }
 .desk p {
 	font-family: 'PT Sans', sans-serif;
-	font-size: 14px;
+	font-size: 0.9rem;
+	margin-bottom:130px;
 }
+
 
 .frame h5{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
-	font-size: 12px;
+	font-size: 0.8rem;
 
 }
 
 .frame p{
 	font-family: 'PT Sans', sans-serif;
-	font-size: 10px;
+	font-size: 0.65rem;
 }
 
 .frame{
@@ -231,7 +241,7 @@ nav {
  -moz-transform: scale(1.1);
  -o-transform: scale(1.1);
  }
-
+ 
 
 .gallery {
 	max-width: 980px;
@@ -239,17 +249,11 @@ nav {
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
-
-.gallery1 {
-	max-width: 980px;
-	margin: 0 auto;
-
-	padding-bottom: 40px;
+.down{
+	margin-bottom: 40px;
 }
-
 .customer {
-	margin: 60px 0 60px 0;
-	
+	padding: 60px 0 60px 0;
 }
 .text{
 	font-size: 10px;
@@ -270,7 +274,7 @@ nav {
 .text i {
 	color: #318f95;
 	font-size: 15px;
-	padding-bottom: 25px;
+	vertical-align:middle;
 }
 
 .fa-clock{
@@ -293,12 +297,23 @@ nav {
 }
 .date{
 	color:#515151;
+	vertical-align: middle;
 }
 .border-bottom {
     border-bottom: 1px solid #515151!important;
+	padding-bottom: 25px;
 }
 
+.contacts i{
+	vertical-align:middle;
+}
 
+.ph {
+	vertical-align:middle;
+}
+.ema{
+	margin-bottom:20px;
+}
 
 footer .row{
 	font-size: 12px;
@@ -320,25 +335,101 @@ footer a:hover   {
 .sosial1 i{
 	padding-right: 20px;
 	font-size: 25px;
+	text-align: right
 }
 
-
-
-@media (max-width: 650px) {
-	
-	.portfolio .border {
-		border: none!important;
-	}
-	
-}
 
 @media (max-width: 760px){
 	.sosial1 i{
 	padding-right: 10px;
 	font-size: 15px;
 	}
+	.frame .border {
+		border: none!important;
+	}
+	
+}
 
-	.sosial i {
-	font-size: 15px;
+@media (min-width: 760px){
+	.transition-translate {
+	position: relative;
+	top: 0;
+	z-index: 2;
+	cursor: pointer;
+	transition: 3s linear;
+	}
+	.transition-translate:hover {
+	top: 100px;
+	}
+	
 }
+@media (min-width: 650px) and (max-width: 760px){
+	
+	.desk p {
+
+	margin-bottom:50px;
+	}
+	.desk i{
+	margin-bottom: 15px;
+	font-size:70px;
+	}
+	
+	
 }
+@media (max-width: 650px) {
+	.main-text h3 {
+	font-size: 1rem;
+	margin: 20px 0;
+	
+	}
+	
+	.main-text p {
+    font-size: 0.8rem;
+	margin-bottom: 20px;
+	}
+
+	.portfolio .border {
+		border: none!important;
+	}
+	
+	.carousel-control-next-icon, 
+	.carousel-control-prev-icon {
+    width: 17px;
+    height: 38px;
+	}
+	.frame .border {
+		border: none;
+	}
+	
+	.text h5 {
+    padding: 25px 0 0 0;
+	}
+	
+	.desk i{
+	margin-bottom: 10px;
+	font-size:50px;
+	}
+	.desk h4 {
+	font-size: 1rem;
+	}
+	.desk p {
+	font-size: 0.6rem;
+	margin-bottom:30px;
+	}
+	
+	.triangle {
+		display: none;
+	}
+	
+	.text {
+    padding-bottom:0;
+	}
+	
+	footer .row {
+    padding: 0;
+	}
+	.customer {
+	padding: 0;
+	}
+}
+
