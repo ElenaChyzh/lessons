@@ -144,7 +144,7 @@ bottom:focus{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
 }
-.main-text h3 {
+.main-text h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 2rem;
 	text-transform: uppercase;
@@ -196,6 +196,7 @@ bottom:focus{
   -ms-transform: scale(1.2);
   transform: scale(1.2);
   color: #00bac6;
+   transition: 1s linear .5s;
 }
 
 .desk h4 {
@@ -209,6 +210,9 @@ bottom:focus{
 	margin-bottom:130px;
 }
 
+.portfolio img {
+	width: 100%;
+}
 
 .frame h5{
 	font-family: 'Open Sans', sans-serif;
@@ -344,10 +348,10 @@ footer a:hover   {
 	padding-right: 10px;
 	font-size: 15px;
 	}
-	.frame .border {
+	
+	.portfolio .border {
 		border: none!important;
 	}
-	
 }
 
 @media (min-width: 760px){
@@ -361,8 +365,10 @@ footer a:hover   {
 	.transition-translate:hover {
 	top: 100px;
 	}
-	
+	.icon {
+    margin-bottom: 0px;
 }
+
 @media (min-width: 650px) and (max-width: 760px){
 	
 	.desk p {
@@ -375,9 +381,10 @@ footer a:hover   {
 	}
 	
 	
+	
 }
 @media (max-width: 650px) {
-	.main-text h3 {
+	.main-text h1 {
 	font-size: 1rem;
 	margin: 20px 0;
 	
@@ -397,6 +404,15 @@ footer a:hover   {
     width: 17px;
     height: 38px;
 	}
+	
+	.carousel-indicators{
+		display:none;
+	}
+	
+
+	
+	
+	
 	.frame .border {
 		border: none;
 	}
@@ -405,17 +421,7 @@ footer a:hover   {
     padding: 25px 0 0 0;
 	}
 	
-	.desk i{
-	margin-bottom: 10px;
-	font-size:50px;
-	}
-	.desk h4 {
-	font-size: 1rem;
-	}
-	.desk p {
-	font-size: 0.6rem;
-	margin-bottom:30px;
-	}
+
 	
 	.triangle {
 		display: none;
@@ -425,11 +431,26 @@ footer a:hover   {
     padding-bottom:0;
 	}
 	
-	footer .row {
-    padding: 0;
-	}
+	
 	.customer {
 	padding: 0;
 	}
+	.down{
+	margin-bottom: 0px;
+	}
+
+	.gallery {
+    padding-bottom: 0px;
+	}
+	footer .row {
+    padding: 0;
+	}
+	
+	footer p {
+	margin-bottom: 0;
+	}
+	
 }
+
+
 

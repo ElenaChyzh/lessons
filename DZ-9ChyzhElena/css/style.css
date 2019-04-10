@@ -16,16 +16,13 @@ header {
 }
 
 .bg-logo{
+	background: #6794b7 url(../img/raccoon.png) no-repeat center center;
 	width: 60px; 
 	height: 60px;
 	border-radius:50%;
-	background: #6794b7;
 	padding-top: 5px;
 }
-.logo {
-	background: url("../img/raccoon.png") no-repeat center center;
-	height: 60px;
-}
+
 
 .logo-text {
 	display: flex;
@@ -63,6 +60,10 @@ nav {
 	text-decoration: none;
 	color: white;
 	font-size: 18px;
+}
+.mobile-menu a {
+	text-decoration: none;
+	color: white;
 }
 
 .triangle {
@@ -120,12 +121,12 @@ aside {
 	margin-right: 30px;
 }
 
-article{
+.info {
 	flex:1;
 	margin-right: 30px;
 }
 
-article h2{
+.info  h2{
 	margin: 20px 0;
 }
 
@@ -199,6 +200,7 @@ article h2{
 
 
 .picture{
+	width: 100%;
 	max-width: 100%;
 }
 
@@ -246,13 +248,15 @@ aside p{
 	width: 100%;
 	height: 50px;
 	text-align: center;
+	display: inline-block;
+	margin-top: 60px;
 }
 
 .cssload-speeding-wheel {
 	width: 50px;
 	height: 50px;
 	margin: 0 auto;
-	border: 3px solid rgba(157,181,201,0.12);
+	border: 3px solid rgba(103, 148, 183,0.15);
 	border-radius: 50%;
 	border-left-color: transparent;
 	border-right-color: transparent;
@@ -396,7 +400,7 @@ aside p{
 	main {
     margin: 20px 0 0 30px;
 	}
-	article h2 {
+	.info  h2 {
     margin: 10px 0;
 	}
 	
