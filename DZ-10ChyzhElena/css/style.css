@@ -1,0 +1,343 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+.clear {
+	/*отменить обтекание, лечим поток*/
+	clear: both;
+}
+
+a{
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+header{
+	background: #8a8a8a;
+}
+
+
+nav, .light_gray {
+	background: #f9f9f9;
+}
+.dark_gray {
+	background: #383838;
+}
+
+header h2, header h1{
+	text-transform: uppercase;
+	color: black;
+}
+.home{
+	text-align: left;
+	padding-top:90px;
+	padding-bottom: 220px;
+}
+.home h2{
+	font-size:15px;
+	padding-bottom:10px;
+	letter-spacing: 1px;
+}
+.home h1{
+	font-size:45px;
+	padding-bottom:20px;
+	letter-spacing: 4px;
+	word-spacing: 20px;
+}
+
+.black{
+	background: black;
+	max-width: 560px;
+	border-radius:5px;
+}
+.black p{
+	letter-spacing: normal;
+	color: white;
+	font-size:10px;
+	text-align: center;
+	padding: 14px 0;
+}
+.up{
+	text-transform: uppercase;
+	font-size: 13px;
+	
+}
+.blue {
+	color:#1da49a;
+}
+.start{
+	margin: 50px 0;
+}
+
+.start h3, .offer h3, .amazing h3 {
+	text-transform: uppercase;
+	font-size: 26px;
+}
+
+.chevron {
+	width: 60px;
+	height: 60px; 
+	border: 5px solid;
+	border-radius: 50%;
+	font-size: 40px;
+	text-align: center;
+	margin-left: 285px;
+}
+.chevron i{
+	padding-top:7px;
+}
+
+nav {
+	border-bottom: 2px solid #eee;
+}
+
+.logo{
+	background: url("../img/logo.png") no-repeat;
+	width: 20%;
+	height:43px;
+	float:left;
+	margin: 30px;
+}
+
+
+
+.menu {
+	list-style: none;
+	float: left;
+	margin-top:30px;
+}
+
+.menu > li {
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	text-transform:uppercase;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+
+.menu li a {
+	display: block;
+	
+	color: #4c4c4c;
+}
+
+.menu li a:hover {
+	color: white;
+}
+
+.menu_sea{
+	float:right;
+}
+
+.blue_cont {
+	background:#f9f9f9;
+	border-radius: 2px;
+}
+
+.blue_cont a {
+	padding: 15px;
+	text-align: center;
+	
+}
+.menu li:hover .blue_cont {
+	background: #1da49a;
+	color:#f9f9f9;
+}
+
+.search {
+	float: right;
+	margin: 40px 0 0 15px;
+}
+
+.flip{
+	-moz-transform: scale(-1, 1);
+	-webkit-transform: scale(-1, 1);
+	-o-transform: scale(-1, 1);
+	transform: scale(-1, 1);
+	filter: FlipH;
+	-ms-filter: "FlipH"; 
+}
+
+.offer, .amazing {
+	text-align: center;
+}
+.offer{
+	padding-bottom:110px;
+}
+.offer h3 {
+	padding: 80px 0 25px 0;
+}
+.offer p{
+	color: #797979;
+	margin-bottom: 50px;
+}
+
+.point{
+	width: 33%;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.point h4{
+	text-transform: uppercase;
+	font-size:14px;
+	font-weight: extrabold;
+	margin: 30px 0 20px 0;
+}
+
+.point p{
+	font-size:10px;
+	font-weight: medium;
+	margin-bottom:20px;
+	
+	
+}
+.circle{
+	width: 100px;
+	height: 100px;
+	border-radius:50%;
+	background: black;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;	
+	
+}
+
+.circle i {
+	font-size: 30px;
+	text-align: center;
+	color: #f9f9f9;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.blue_but {
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	background:#f9f9f9;
+	border-radius: 2px;
+}
+
+.blue_but a {
+	padding: 10px;
+	text-align: center;
+	color:  #797979;
+	
+}
+
+.point:hover .blue_but a {
+	background: #1da49a;
+	border-radius: 2px;
+	color:#f9f9f9;
+}
+
+.point:hover .circle {
+	background: #1da49a;
+
+}
+.light {
+	color: #f9f9f9;
+}
+
+.amazing h3{
+	padding: 80px 0 20px 0;
+	
+}
+.amazing p{
+	color:#9a9a9a;
+	
+}
+.features{
+	padding-bottom:107px;
+}
+.point1{
+	
+	text-align: left;
+	
+}
+.point1 h4{
+	color:#f9f9f9;
+	text-transform: uppercase;
+	font-size:14px;
+	font-weight: extrabold;
+	margin: 30px 0 20px 0;
+}
+
+.point1 p{
+	color:#9a9a9a;
+	font-size:10px;
+	font-weight: medium;
+	margin-bottom:70px;
+}
+
+.text {
+	float: left;
+	width: 30%;
+	clear:both;
+}
+.tab{
+	width: 70%;
+    display: inline-block;
+    vertical-align: middle;
+	float:right;
+	position: relative;
+}
+
+.silver1, .silver {
+	position: absolute;
+}
+.silver1{
+	top: 85px;
+	left: 100px;
+}
+
+.silver{
+	top: -60px;
+    left: 360px;
+}
+
+.text_i i{
+	float: left;
+	font-size:35px;
+	color:#1da49a;
+	margin-right: 30px;
+	
+}
+.flag{
+    width: 33%;
+    padding: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+.news {
+	padding: 80px 0 110px 0;
+	
+}
+
+.news h4{
+	text-transform: uppercase;
+	font-size:11px;
+	padding-bottom:15px;
+}
+.news h5{
+	font-size:8px;
+	padding-bottom:25px;
+}
+
+.news p{
+	font-size:9px;
+}
