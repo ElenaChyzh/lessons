@@ -74,9 +74,10 @@ header h2, header h1{
 }
 .start{
 	margin: 50px 0;
+	
 }
 
-.start h3, .offer h3, .amazing h3 {
+.start h3, .offer h3, .amazing h3, .skills h3, .works h3{
 	text-transform: uppercase;
 	font-size: 26px;
 }
@@ -167,11 +168,12 @@ nav {
 	-ms-filter: "FlipH"; 
 }
 
-.offer, .amazing {
+.offer, .amazing, .skills {
 	text-align: center;
 }
 .offer{
 	padding-bottom:110px;
+	position:relative;
 }
 .offer h3 {
 	padding: 80px 0 25px 0;
@@ -224,6 +226,28 @@ nav {
 }
 
 
+.diamond-shape {
+	background: #1da49a;
+	height: 60px;
+	text-align: center;
+	transform:rotate(45deg);
+	width:60px;
+	position: absolute;
+    top: 95%;
+    left: 45%;
+   
+}
+.item-count {
+	color: #f9f9f9;
+	display: table-cell;
+	height: 60px;
+	transform: rotate(-45deg);
+	vertical-align: middle;
+	width:60px;
+}
+
+
+
 .blue_but {
 	font-size: 10px;
 	text-transform: uppercase;
@@ -265,7 +289,7 @@ nav {
 	padding-bottom:107px;
 }
 .point1{
-	
+	margin-left: 70px;
 	text-align: left;
 	
 }
@@ -314,7 +338,7 @@ nav {
 	float: left;
 	font-size:35px;
 	color:#1da49a;
-	margin-right: 30px;
+	
 	
 }
 .flag{
@@ -340,4 +364,123 @@ nav {
 
 .news p{
 	font-size:9px;
+}
+
+
+
+.arrow {
+    width:40px;
+	height:40px;
+    position: relative;
+    background: #404040;
+	display: inline-block;
+	text-align: center;
+	padding-top: 15px;
+	float:left;
+}
+
+.arrow:after {
+	content: " ";
+	position: absolute;
+	right:0;
+	bottom: -15px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 20px 0 20px;
+    border-color: #404040 transparent transparent transparent;
+	
+}
+.arrow i{
+	
+	color:#f9f9f9;
+	font-size: 20px;
+}
+
+.arrow_blue {
+    width:40px;
+	height:60px;
+    position: relative;
+    background:  #1da49a;
+	display: inline-block;
+	
+}
+
+.arrow:after {
+	content: " ";
+	position: absolute;
+	right:0;
+	bottom: -15px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 20px 0 20px;
+    border-color: #1da49a transparent transparent transparent;
+	
+}
+.description {
+	margin-left: 50px;
+}
+.description h4 {
+	color: #383838;
+	font-size: 12px;
+}
+
+.description p {
+	color:#797979;
+	font-size: 9px;
+}
+.description h5 {
+	color:#9a9a9a;
+	font-size: 8px;
+}
+ 
+.skills h3 {
+	padding: 80px 0 25px 0;
+}
+.skills p {
+	color:#9a9a9a;
+}
+.speed {
+	width: 15%;
+    padding: 30px;
+    display: inline-block;
+    vertical-align: top;
+	text-align: center;
+}
+.speed p{
+	padding: 20px 0 70px 0;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color:#9a9a9a;
+	
+}
+   
+.circle_speed{
+	width: 120px;
+	height: 120px; 
+	border: 2px solid #1da49a;
+	border-radius: 50%;
+	font-size: 40px;
+	text-align: center;
+}
+
+.works {
+	text-align: center;
+}
+.works h3 {
+	padding: 80px 0 25px 0;
+}
+.works p {
+	padding-bottom: 50px;
+}
+.pro{
+	background: #8a8a8a;
+	width:14%;
+    padding: 2px;
+    display: inline-block;
+    vertical-align: top;
 }
